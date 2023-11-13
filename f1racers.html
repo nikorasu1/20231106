@@ -123,7 +123,7 @@
                 if(menorMedia > media[i]) //Pegando a menor média.
                 {
                     menorMedia = media[i];
-                    ArrayInformacoes[0] = i; //Índice do piloto que ficará na pole-station.
+                    ArrayInformacoes[0] = i; //Índice do piloto que ficará na pole-position.
                 }
 
                 if(maiorMedia < media[i])
@@ -200,7 +200,7 @@
                 return minutos + " minuto(s) e " + segundos + " segundo(s)";
             }
 
-            document.write("Nome do piloto que estará na Pole-station: "+ ArrayNomes[ArrayInformacoes[0]] + " | Tempo médio: " + converterTempo(grid[0]) + "<br>");
+            document.write("Nome do piloto que estará na Pole-position: "+ ArrayNomes[ArrayInformacoes[0]] + " | Tempo médio: " + converterTempo(grid[0]) + "<br>");
             document.write("Número do carro que largará em último: " + ArrayInformacoes[1] + "<br>");
             document.write("Nome do piloto que fez a volta mais rápida: " + ArrayNomes[ArrayInformacoes[2]] + " | Tempo da volta: " + converterTempo(menorTempo) + "<br>");
             document.write("Número do carro que fez a volta mais lenta: "+ ArrayNumCarros[ArrayInformacoes[3]] + " | Tempo da volta " + converterTempo(maiorTempo) + "<br>");
